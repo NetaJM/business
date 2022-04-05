@@ -1,0 +1,73 @@
+
+/* * * * * ABOUT SECION * * * * */
+
+section.about {
+
+  background: var(--color-light);
+
+  h1 {
+    font-family: "Bodoni Moda", serif;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    font-family: "Manrope", sans-serif;
+    color: var(--color-primary);
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 20rem auto;
+    gap: 5rem;
+
+    .read-more {
+      display: block;
+      margin: 1rem 0 2rem;
+      color: var(--color-primary);
+      font-family: "Manrope", sans-serif;
+      font-weight: 300;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+        color: var(--color-hover);
+      }
+    }
+
+    .read-more-content {
+      display: none;
+
+      &.show-content {
+        display: block;
+      }
+    }
+  }
+
+  .image {
+    border: 0.15rem solid var(--color-black);
+    background: var(--color-black);
+    width: 19rem;
+    height: 23rem;
+    overflow: hidden;
+  }
+
+}
+
+section.resume-btn {
+  padding: 1.2rem 0.5rem;
+  border: 0.1rem solid var(--color-primary);
+  width: 17rem;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: var(--color-black);
+  background: var(--color-white);
+  overflow-x: hidden;
+  margin: 0.1rem 0.5rem;
+  transition: var(--transition);
+}

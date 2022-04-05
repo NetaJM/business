@@ -1,0 +1,140 @@
+:root {
+  --color-white: #fffafa;
+
+  --color-light: #fffbfb;
+
+  --color-black: #2f4f4f;
+
+  --color-primary: #5e7d7e;
+
+  --color-hover: #cc5500;
+
+  --color-icons: #e7e7e7;
+
+  --transition: all 300ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background: var(--color-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-hover);
+}
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--color-black);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 0.86rem;
+}
+
+p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 10rem 0 7rem;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+section h1 {
+  text-align: center;
+  display: block;
+  font-family: "Manrope", sans-serif;
+  font-weight: 200;
+  margin-bottom: 5rem;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  padding: 1.4rem 3.4rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--color-light);
+  background: var(--color-white);
+  display: inline-block;
+  margin: 2rem 0;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  color: var(--color-hover);
+}
+
+.btn-primary {
+  background: var(--color-white);
+  color: var(--color-dark);
+}
+
+a.btn.btn-primary {
+  padding: 1rem 0.3rem;
+  border: 0.1rem solid var(--color-primary);
+  width: 12rem;
+  height: 2.8rem;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+a.btn.btn-primary:hover {
+  color: var(--color-hover);
+  border: 0.1rem solid var(--color-hover);
+}
